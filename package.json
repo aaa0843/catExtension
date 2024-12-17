@@ -1,0 +1,23 @@
+{
+  "name": "test-extension",
+  "displayName": "Test Extension",
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "test-extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:test-extension.helloWorld"
+  ],
+  "dependencies": {
+    "ws": "^8.4.0"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.58.0"
+  }
+}
